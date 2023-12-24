@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="stylesheet"  href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Tiketin.</h1>
+            <nav class="navbar">
+                <a href="http://127.0.0.1:5500/home/index.html">Home</a>
+                <a >About Us</a>
+                <a >Films</a>
+                <a >Features</a>
+
+            </nav>
+        </div>
+        <div class="content">
+            <img src="movie.png">
+
+            
+            <div class="booking">
+                <div>
+                    <h1 class="heading">MOVIES TICKET BOOKING</h1>
+                    <p>Easy book all film, from anywhere and every time</p>
+                </div>
+    
+            <form action="insert.php" method="POST">
+              <div class="box">
+                <div class="inp">
+                    <input type="email" required="required" name="Email" class="finput">
+                    <span class="other">Your Email</span>
+                </div>
+                <div class="inp">
+                    <input type="text" required="required" name="Film" class="finput">
+                    <span class="other">Choose Film</span>
+                </div>
+                <div class="in">
+                    <input type="text" required="required" name="City" class="finput">
+                    <span class="other">City</span>
+                        <input type="date" required="required" name="Date" class="finput">
+                        <span class="date">Date</span>  
+                </div>
+
+                <div class="in">
+                    <input type="number" required="required" name="SeatNo" class="finput">
+                    <span class="other">Seat Number</span>
+                        <input type="time" required="required" name="Time" class="finput">
+                        <span class="date">Time</span>  
+                </div>
+               
+                <!-- <div class="inp">
+                    <input type="number" required="required" name="SeatNo" class="finput">
+                    <span class="other">Choose Seat Number</span>
+                </div> -->
+                <input class="book" type="Submit" value="Book Now" class="submit" name="Submit">
+                <!-- <a class="book" >Book Now</a> -->
+                
+              </div>
+            </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
